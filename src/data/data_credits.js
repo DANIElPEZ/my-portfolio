@@ -74,7 +74,16 @@ export const data_credits=[
           creator:'por "freeiconspng.com"',
           url:'https://www.freeiconspng.com'
      },
-
+     {
+          title:'Gemini logo',
+          creator:'por "https://uxwing.com/"',
+          url:'https://uxwing.com'
+     },
+     {
+          title:'Deepseek logo',
+          creator:'por "https://uxwing.com"',
+          url:'https://uxwing.com'
+     },
      {
           title:'Chatgpt logo',
           creator:'por "Wikimedia Commons"',

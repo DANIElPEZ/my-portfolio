@@ -3,11 +3,13 @@ import { data_links_buttons } from "./../data/data_links";
 import { Nav_bar } from "./../components/nav_bar";
 import { Footer } from "./../components/footer";
 import { Link } from "react-router";
+import { Temporal } from "temporal-polyfill";
 import Logo from './../assets/DNV.png'
-import './../styles/App.css'
+import './../styles/buttons_projects.css'
 
 export function Main() {
   const main_page_btn_links = data_links_buttons.Main_page;
+  const years = Temporal.Now.zonedDateTimeISO().year-2023;
 
   const Content = (
     <div className="flex flex-col w-full items-center h-full bg-[var(--main-content-bg-color)]">
@@ -21,7 +23,7 @@ export function Main() {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row w-full justify-start sm:justify-between gap-1.5 my-5">
-            <span className="flex text-[var(--text-color)] text-xs"><p className="mr-2 text-[var(--main-color-small-info)]">+2</p>Años en crear aplicaciones</span>
+            <span className="flex text-[var(--text-color)] text-xs"><p className="mr-2 text-[var(--main-color-small-info)]">+{years}</p>Años en crear aplicaciones</span>
             <span className="flex text-[var(--text-color)] text-xs"><p className="mr-2 text-[var(--main-color-small-info)]">+17</p>proyectos realizados</span>
           </div>
         </div>
@@ -29,9 +31,9 @@ export function Main() {
         Bienvenid@s mi nombre es DANIEL GONZALEZ y soy estudiante de la carrera 💻 Ingeniería informatica. Ser un excelente programador en el lenguaje de programación Python3.
         </div>
         <div className="flex gap-3 w-full flex-start">
-          <Link to='/projects/desktop' className="text-[var(--text-color)] text-sm rounded-lg px-3.5 py-2 bg-cyan-800 font-medium">Escritorio</Link>
-          <Link to='/projects/mobile' className="text-neutral-100 text-sm rounded-lg px-3.5 py-2 bg-sky-400 font-medium">Movil</Link>
-          <Link to='/projects/web' className="text-neutral-800 text-sm rounded-lg px-3.5 py-2 bg-yellow-300 font-medium">Web</Link>
+          <Link to='/projects/desktop' className="desktop">Escritorio</Link>
+          <Link to='/projects/mobile' className="mobile">Movil</Link>
+          <Link to='/projects/web' className="web">Web</Link>
         </div>
       </section>
       <section>
@@ -47,7 +49,7 @@ export function Main() {
                 url={btn.url}
                 bg_img={btn.bg_img}
                 target={btn.target}
-                bg_hover={'--resources-color'}
+                bg_hover={btn.bg_hover}
               />
             ))}
           </section>

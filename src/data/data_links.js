@@ -15,13 +15,15 @@ import vscode from './../assets/vscode.png'
 import sqlite from './../assets/sqlite.png'
 import table from './../assets/tabla.png'
 import analizer from './../assets/code.webp'
+import gemini from './../assets/gemini.png'
+import deepseek from './../assets/deepseek.png'
 
 export const data_links_buttons = {
      //Main view
      Main_page: [
           {
                title_section: 'Redes de contacto',
-               content:[{
+               content: [{
                     icon: linkedin,
                     title: "LinkedIn",
                     creator: "Perfil de linkedin",
@@ -93,7 +95,7 @@ export const data_links_buttons = {
                     creator: "La Geekipedia de Ernesto",
                     bg_hover: "--python-color",
                     url: "https://www.youtube.com/playlist?list=PLyvsggKtwbLW1j0d5yaCkRF9Axpdlhsxz",
-                    bg_img: true,
+                    bg_img: false,
                     target: '_blank'
                },
                {
@@ -102,7 +104,7 @@ export const data_links_buttons = {
                     creator: "Soy Dalto",
                     bg_hover: "--python-color",
                     url: "https://www.youtube.com/watch?v=HtKqSJX7VoM",
-                    bg_img: true,
+                    bg_img: false,
                     target: '_blank'
                }]
           },
@@ -114,7 +116,7 @@ export const data_links_buttons = {
                     creator: "Soy Dalto",
                     bg_hover: "--html-css-color",
                     url: "https://www.w3schools.com/html/",
-                    bg_img: true,
+                    bg_img: false,
                     target: '_blank'
                },
                {
@@ -123,7 +125,7 @@ export const data_links_buttons = {
                     creator: "JAVASCRIPT.INFO",
                     bg_hover: "--javascript-color",
                     url: "https://es.javascript.info/",
-                    bg_img: true,
+                    bg_img: false,
                     target: '_blank'
                }]
           },
@@ -135,7 +137,7 @@ export const data_links_buttons = {
                     creator: "Soy Dalto",
                     bg_hover: "--sql-color",
                     url: "https://www.youtube.com/watch?v=DFg1V-rO6Pg",
-                    bg_img: true,
+                    bg_img: false,
                     target: '_blank'
                }]
           },
@@ -159,7 +161,7 @@ export const data_links_buttons = {
                     creator: "Recursos de W3Schools",
                     bg_hover: "--w3schools-color",
                     url: "https://www.w3schools.com/",
-                    bg_img: true,
+                    bg_img: false,
                     target: '_blank'
                }]
           }
@@ -168,15 +170,35 @@ export const data_links_buttons = {
      Tools: [
           {
                title_section: "Inteligencia Artificial",
-               content: [{
-                    icon: chatgpt,
-                    title: "ChatGPT",
-                    creator: "Herramienta de IA",
-                    bg_hover: "--chatgp-color",
-                    url: "https://chat.openai.com/",
-                    bg_img: true,
-                    target: '_blank'
-               }]
+               content: [
+                    {
+                         icon: chatgpt,
+                         title: "ChatGPT",
+                         creator: "Herramienta de IA",
+                         bg_hover: "--chatgp-color",
+                         url: "https://chat.openai.com/",
+                         bg_img: false,
+                         target: '_blank'
+                    },
+                    {
+                         icon: deepseek,
+                         title: "DeepSeek",
+                         creator: "Herramienta de IA",
+                         bg_hover: "--chatgp-color",
+                         url: "https://www.deepseek.com/",
+                         bg_img: false,
+                         target: '_blank'
+                    },
+                    {
+                         icon: gemini,
+                         title: "Gemini",
+                         creator: "Herramienta de IA",
+                         bg_hover: "--chatgp-color",
+                         url: "https://gemini.google.com/",
+                         bg_img: false,
+                         target: '_blank'
+                    },
+               ]
           },
           {
                title_section: "Editor de codigo",
@@ -186,7 +208,7 @@ export const data_links_buttons = {
                     creator: "Editor de código",
                     bg_hover: "--vscode-color",
                     url: "https://code.visualstudio.com/",
-                    bg_img: true,
+                    bg_img: false,
                     target: '_blank'
                }]
           },
@@ -219,7 +241,7 @@ export const data_links_buttons = {
                     creator: "Base de datos",
                     bg_hover: "--sqlite-color",
                     url: "https://www.sqlite.org/",
-                    bg_img: true,
+                    bg_img: false,
                     target: '_blank'
                }]
           },
