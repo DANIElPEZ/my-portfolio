@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root{
+     /*Global Styles*/
+     --nav-bar-bg-color: #1b2b43;
+     --main-content-bg-color: #0c151d;
+     --main-color-small-info: #14a1f0;
+     --text-color: #f1f2f4;
+     --main-button-color: #46464666;
+     /* nav bar colors*/
+     --nav-bar-bg:#1b2b43;
+     --side-bar-bg:#0f1928;
+     --link-hover-color: #105a86;
+     /*buttons hover colors*/
+     /* main view */
+     --linkedin-color: #055d91;
+     --github-color: #444444;
+     --instagram-color: #785937;
+     --facebook-color: #033c5d;
+     --resources-color: #667136;
+     --tools-color: #122b61;
+     /* resources view */
+     --python-color: #0c2d57;
+     --html-css-color: #474f7a;
+     --javascript-color: #cbc52f;
+     --sql-color: #3a98b9;
+     --git-gitHub-color: #c8983d;
+     --w3schools-color: #186f65;
+     /* tools view */
+     --chatgp-color: #728b55;
+     --vscode-color: #0a4d68;
+     --git-color: #c8983d;
+     --github-color: #444444;
+     --sqlite-color: #3a98b9;
+     --table-color:#1b7687;
+     --analizer-color:#1a2c42;
+}
