@@ -104,6 +104,18 @@
   animation-timing-function: steps(2, end);
 }
 
+@media (width<=40rem) {
+  .desktop,
+  .desktop::after,
+  .mobile,
+  .mobile::after,
+  .web,
+  .web::after {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
