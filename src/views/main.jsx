@@ -30,6 +30,7 @@ export function Main() {
         <div className="text-justify w-full text-[var(--text-color)] text-sm mb-5">
         Bienvenid@s mi nombre es DANIEL GONZALEZ y soy estudiante de la carrera 💻 Ingeniería informatica. Ser un excelente programador en el lenguaje de programación Python3.
         </div>
+        <h3 className="text-2xl mb-4 ml-4 font-medium text-[var(--text-color)]">Proyectos</h3>
         <div className="flex gap-3 w-full flex-start">
           <Link to='/projects/desktop' className="desktop">Escritorio</Link>
           <Link to='/projects/mobile' className="mobile">Movil</Link>
