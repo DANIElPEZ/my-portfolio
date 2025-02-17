@@ -11,12 +11,16 @@ const api_key = import.meta.env.VITE_API_KEY;
 const supabase = createClient(url_supabase, api_key);
 
 export function Comments() {
-  const [comments, set_comments] = React.useState([]);
+  let [comments, set_comments] = React.useState([]);
   const [name, set_name] = React.useState("");
   const [comment, set_comment] = React.useState("");
 
   React.useEffect(() => {
-    getComments();
+    try {
+      setTimeout(() => getComments(), 2000);
+    } catch (e) {
+      console.log(`error to load: ${e}`);
+    }
   }, []);
 
   async function getComments() {
@@ -75,16 +79,22 @@ export function Comments() {
         <span className="text text-sm">Enviar</span>
       </button>
       <section className="my-5 w-75">
-        {comments.map((comment) => (
-          <div key={comment} className="flex flex-col items-center mb-5">
-            <h6 className="text-[var(--text-color)] text-center text-sm">
-              {comment.name}
-            </h6>
-            <p className="text-[var(--text-color)] text-sm text-justify border-b-2 py-3">
-              {comment.comment}
-            </p>
+        {comments.length > 0 ? (
+          comments.map((comment) => (
+            <div key={comment} className="flex flex-col items-center mb-5">
+              <h6 className="text-[var(--text-color)] text-center text-sm">
+                {comment.name}
+              </h6>
+              <p className="text-[var(--text-color)] text-sm text-justify border-b-2 py-3">
+                {comment.comment}
+              </p>
+            </div>
+          ))
+        ) : (
+          <div className="flex w-full h-full items-center justify-center">
+            <span className="h-[55px] w-[55px] rounded-full border-8 border-neutral-600 border-l-[#3f99f2] animate-spin"></span>
           </div>
-        ))}
+        )}
       </section>
     </div>
   );
