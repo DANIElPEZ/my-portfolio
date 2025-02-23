@@ -1,7 +1,7 @@
 import { Nav_bar } from "./../components/nav_bar.jsx";
 import { Footer } from "./../components/footer.jsx";
 import { Temporal } from "temporal-polyfill";
-import dnv from "./../assets/DNV.png";
+import WatchDogs from "./../assets/WatchDogs.webp";
 import power_toys from "./../assets/pwtoys.jpg";
 import Xplane_11 from "./../assets/xplane-11.jpg";
 import concorde_inside from "./../assets/concorde-inside.webp";
@@ -52,9 +52,9 @@ export function Blog() {
       <div className="flex flex-col items-start w-73 sm:w-112">
         <section className="flex w-full items-center">
           <img
-            src={dnv}
-            alt="Mi logo"
-            className="w-[96px] h-[96px] rounded-2xl mr-3"
+            src={WatchDogs}
+            alt="logo"
+            className="w-[96px] h-[96px] rounded-2xl mr-3 object-cover"
           />
           <p className="text-[var(--text-color)] leading-4.5 text-justify text-sm">
             Hola yo soy Daniel Santiago Angel Gonzalez Ubaque, aquí comparto lo
