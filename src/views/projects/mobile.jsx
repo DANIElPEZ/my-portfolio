@@ -3,10 +3,13 @@ import { Footer } from "./../../components/footer.jsx";
 import { Project } from "../../components/project_section.jsx";
 import iconic1 from "./../../assets/iconic1.png";
 import iconic2 from "./../../assets/iconic2.png";
+import wd1 from './../../assets/playWD1.png';
+import wd2 from './../../assets/playWD2.png';
 /* mobile tecnologies */
 import flutter from "./../../assets/flutter.webp";
 /* Files *.apk to download compiled project*/
 import iconic_apk from "./../../assets/programas/iconicMusic.apk";
+import ctos_apk from "./../../assets/programas/CTOS.apk";
 
 export function Mobile() {
   const content = (
@@ -21,6 +24,14 @@ export function Mobile() {
           imgs:[iconic1, iconic2],
           url_github:"https://github.com/DANIElPEZ/iconic-music",
           file:iconic_apk,
+          type_button:true
+        })}
+        {Project({
+          title:'CTOS play',
+          logos:[flutter],
+          imgs:[wd1, wd2],
+          url_github:'https://github.com/DANIElPEZ/watch-dogs-hack-play',
+          file:ctos_apk,
           type_button:true
         })}
       </div>
