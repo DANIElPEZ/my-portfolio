@@ -5,6 +5,7 @@ import docker from "./../../assets/docker.png";
 import weather from "./../../assets/weather.png";
 import dbguide from './../../assets/dbguide.png'
 /* web tecnologies */
+import tailwind from "./../../assets/Tailwind.png";
 import reflex from "./../../assets/reflex.jpg";
 import react from './../../assets/react.webp'
 import mui from './../../assets/mui.png'
@@ -50,22 +51,10 @@ export function Web() {
           Otros proyectos
         </h2>
         {Project({
-          title: "Tetris Game",
-          logos: [html, css, js],
-          url_github: "https://github.com/DANIElPEZ/tetris-clone",
-          url_web: "https://tetris-clone-dnv.vercel.app/",
-        })}
-        {Project({
-          title: "Snake Game",
-          logos: [html, css, js],
-          url_github: "https://github.com/DANIElPEZ/snake-game-css-grid",
-          url_web: "https://snake-game-dnv.vercel.app/",
-        })}
-        {Project({
-          title: "Brick Breaker Game",
-          logos: [html, css, js],
-          url_github: "https://github.com/DANIElPEZ/brick-breaker-clone",
-          url_web: "https://brick-breaker-dnv.vercel.app/",
+          title:'Games and simulations',
+          logos:[react, tailwind],
+          url_github:'https://github.com/DANIElPEZ/games-and-simulations',
+          url_web:'https://games-and-simulations.vercel.app'
         })}
         {Project({
           title: "Paint js",
@@ -78,12 +67,6 @@ export function Web() {
           logos: [html, css, js],
           url_github: "https://github.com/DANIElPEZ/tier-maker",
           url_web: "https://tier-maker-dnv.vercel.app/",
-        })}
-        {Project({
-          title: "IA Privado",
-          logos: [html, css, js],
-          url_github: "https://github.com/DANIElPEZ/ia-privado",
-          url_web: "https://chatgpt-privado-dnv.vercel.app/",
         })}
       </div>
     </div>
