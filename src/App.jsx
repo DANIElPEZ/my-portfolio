@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router'
+import { HashRouter as Router, Routes, Route } from 'react-router'
 
 // Importing all views
 import {Blog} from './views/blog'
@@ -16,7 +16,7 @@ import {Web} from './views/projects/web'
 export default function App() {
   return (
     <>
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route index element={<Main/>}/>
         {/* views */}
@@ -31,7 +31,7 @@ export default function App() {
         <Route path="/projects/mobile" element={<Mobile/>} />
         <Route path="/projects/web" element={<Web/>} />
       </Routes>
-    </BrowserRouter>
+    </Router>
     </>
   )
 };
