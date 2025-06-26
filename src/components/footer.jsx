@@ -22,7 +22,7 @@ export function Footer() {
         <div className="w-70 sm:w-93">
           <div className="flex flex-col items-center text-center mb-5">
             <h3 className="text-[var(--text-color)] text-sm">
-              💻 PYTHON DEVELOPER 💻
+              💻 🧑‍💻 💻
             </h3>
             <h6 className="text-[var(--text-color)] text-xs">
               Years active from beautiful colombia 👍 2023 - {current_year}

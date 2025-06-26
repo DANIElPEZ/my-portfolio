@@ -33,7 +33,6 @@ export function Desktop() {
           url_github: 'https://github.com/DANIElPEZ/python-desktop/blob/master/ulamspiral/ulamspiral.py',
           name:'Ulam Spiral.zip',
           file:ulamspiral,
-          file:algebra,
           type_button:true
         })}
       </div>
