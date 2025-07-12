@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import { Temporal } from "temporal-polyfill";
 
 export function Footer() {
@@ -27,9 +26,6 @@ export function Footer() {
             <h6 className="text-[var(--text-color)] text-xs">
               Years active from beautiful colombia 👍 2023 - {current_year}
             </h6>
-            <Link to="/credits" className="text-sm text-neutral-400">
-              creditos
-            </Link>
           </div>
           <div className="flex flex-col justify-start">
             <h4 className="text-[var(--text-color)]">Contacto</h4>

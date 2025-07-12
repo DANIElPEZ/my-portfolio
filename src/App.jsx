@@ -3,7 +3,6 @@ import { HashRouter as Router, Routes, Route } from 'react-router'
 // Importing all views
 import {Blog} from './views/blog'
 import {Comments} from './views/comments'
-import {Credits} from './views/credits'
 import {Game} from './views/game'
 import {Main} from './views/main'
 import {Resources} from './views/resources'
@@ -22,7 +21,6 @@ export default function App() {
         {/* views */}
         <Route path="/blog" element={<Blog/>} />
         <Route path="/comments" element={<Comments/>} />
-        <Route path="/credits" element={<Credits/>} />
         <Route path="/game" element={<Game/>} />
         <Route path="/resources" element={<Resources/>} />
         <Route path="/tools" element={<Tools/>} />
