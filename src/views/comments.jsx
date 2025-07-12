@@ -1,14 +1,7 @@
 import React from "react";
 import { Nav_bar } from "./../components/nav_bar.jsx";
 import { Footer } from "./../components/footer.jsx";
-import { createClient } from "@supabase/supabase-js";
-import DOMPurify from "dompurify";
 import "./../styles/button_comment.css";
-
-const url_supabase = import.meta.env.VITE_URL_SUPABASE;
-const api_key = import.meta.env.VITE_API_KEY;
-
-const supabase = createClient(url_supabase, api_key);
 
 export function Comments() {
   let [comments, set_comments] = React.useState([]);
@@ -16,39 +9,62 @@ export function Comments() {
   const [comment, set_comment] = React.useState("");
 
   React.useEffect(() => {
-    try {
       setTimeout(() => getComments(), 2000);
-    } catch (e) {
-      console.log(`error to load: ${e}`);
-    }
   }, []);
 
   async function getComments() {
-    const { data } = await supabase.from("comments").select();
-    set_comments(data);
+    try {
+      const res = await fetch(
+        "https://pages-and-apis-production.up.railway.app/comments",
+      );
+      const data = await res.json();
+      set_comments(data);
+    } catch (err) {
+      console.error("Error al obtener comentarios:", err);
+    }
   }
 
   async function sendComment() {
-    const sanitized_name = DOMPurify.sanitize(name);
-    const sanitized_comment = DOMPurify.sanitize(comment);
+    const { name: sanitized_name, comment: sanitized_comment } = sanitizeInput(
+      name,
+      comment
+    );
 
     if (!sanitized_name || !sanitized_comment) {
       alert("Por favor, completa los campos.");
       return;
     }
-
-    const { error } = await supabase
-      .from("comments")
-      .insert([{ name: sanitized_name, comment: sanitized_comment }]);
-
-    if (error) {
-      alert("Error al enviar.");
-    } else {
+    try {
+      await fetch("https://pages-and-apis-production.up.railway.app/comments", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: name,
+          comment: comment,
+        }),
+      });
       set_name("");
       set_comment("");
-
       getComments();
+    } catch (error) {
+      console.error("Error al enviar el comentario:", error);
+      alert("Error al enviar el comentario. Por favor, inténtalo de nuevo.");
     }
+  }
+
+  function sanitizeInput(name, comment) {
+    const sanitizeName = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
+    const sanitizeComment = /^[\p{L}\p{Emoji_Presentation}\p{Emoji}\s]+$/u;
+
+    const isValidName = sanitizeName.test(name.trim());
+    const isValidComment = sanitizeComment.test(comment.trim());
+
+    return {
+      name: isValidName,
+      comment: isValidComment,
+    };
   }
 
   const content = (
@@ -81,11 +97,11 @@ export function Comments() {
       <section className="my-5 w-75">
         {comments.length > 0 ? (
           comments.map((comment) => (
-            <div key={comment} className="flex flex-col items-center mb-5">
+            <div key={comment._id} className="flex flex-col items-center mb-5">
               <h6 className="text-[var(--text-color)] text-center text-sm">
                 {comment.name}
               </h6>
-              <p className="text-[var(--text-color)] text-sm text-justify border-b-2 py-3">
+              <p className="text-[var(--text-color)] break-all text-wrap text-sm text-justify border-b-2 py-3">
                 {comment.comment}
               </p>
             </div>
