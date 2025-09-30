@@ -24,7 +24,7 @@ export function Footer() {
               💻 🧑‍💻 💻
             </h3>
             <h6 className="text-[var(--text-color)] text-xs">
-              Years active from beautiful colombia 👍 2023 - {current_year}
+              From Colombia 👍 2023 - {current_year}
             </h6>
           </div>
           <div className="flex flex-col justify-start">
