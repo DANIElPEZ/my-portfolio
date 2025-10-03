@@ -4,7 +4,7 @@ import { Nav_bar } from "./../components/nav_bar";
 import { Footer } from "./../components/footer";
 import { Temporal } from "temporal-polyfill";
 import { projects, stack } from "./../constants/projects";
-import Logo from "./../assets/DNV.png";
+import profile from "./../assets/profile.png";
 import cv from "./../assets/CV.pdf";
 
 export function Main() {
@@ -14,7 +14,7 @@ export function Main() {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href = cv;
-    link.download = "CV.pdf";
+    link.download = "cv.pdf";
     link.click();
   };
 
@@ -26,9 +26,9 @@ export function Main() {
       <section className="flex flex-col items-center w-full max-w-3xl gap-6 md:px-9">
         <div className="flex items-center justify-center">
           <img
-            src={Logo}
+            src={profile}
             alt="logo"
-            className="w-20 h-20 rounded-full border-2 border-[var(--link-hover-color)]"
+            className="w-20 h-20 rounded-full border-2 border-[var(--link-hover-color)] object-cover bg-[var(--nav-bar-bg-color)]"
           />
           <div className="flex flex-col ml-4 justify-center">
             <h6 className="text-[var(--text-color)] text-xl font-bold">
@@ -125,12 +125,17 @@ export function Main() {
               className="flex flex-col bg-gray-800 rounded-2xl shadow-md overflow-hidden border border-gray-700"
             >
               <div className="p-2">
-                <h2 className="font-medium text-xl text-white">{p.nombre}</h2>
-                <img
-                  src={p.imagen}
-                  alt={p.nombre}
-                  className="w-full h-full object-contain"
-                />
+                <h2 className="font-medium text-xl text-white mb-3">{p.nombre}</h2>
+                <div className="flex flex-wrap gap-2 items-center justify-center">
+                  {p.imagenes.map((img, index) => (
+                    <img
+                      key={index}
+                      src={img}
+                      alt={`${p.nombre} ${index + 1}`}
+                      className="max-h-[200px] object-contain rounded-lg shadow-md"
+                    />
+                  ))}
+                </div>
               </div>
               <div className="flex flex-col flex-1 p-2">
                 <h4 className="text-lg font-semibold text-white mb-2">
@@ -250,7 +255,7 @@ export function Main() {
         <h3 className="text-2xl font-medium text-[var(--text-color)] my-4">
           Stack tecnológico
         </h3>
-        <div className="flex gap-3">
+        <div className="flex gap-3 flex-col">
           <div>
             <h2 className="font-semibold text-xl text-white mb-3">Web</h2>
             <div className="flex flex-wrap gap-3">

@@ -7,7 +7,7 @@ export const projects = [
     nombre: "Docker guide",
     tipo: "web",
     descripcion: "Docker Guide es una guía practica para aprender los fundamentos de Docker de una manera simple y estructurada.",
-    imagen: docker,
+    imagenes: [docker],
     github: "https://github.com/DANIElPEZ/docker-guide",
     link: "https://docker-guide.vercel.app/",
     tecnologias: [
@@ -20,7 +20,7 @@ export const projects = [
     nombre: "Database guide",
     tipo: "web",
     descripcion: "Database Guide es un proyecto web que explica cómo normalizar una base de datos paso a paso, desde la primera forma normal (1NF) hasta la tercera forma normal (3NF).",
-    imagen: db,
+    imagenes: [db],
     github: "https://github.com/DANIElPEZ/database-guide",
     link: "https://database-guide.vercel.app/",
     tecnologias: [
@@ -33,7 +33,10 @@ export const projects = [
     nombre: "Fly in Sky",
     tipo: "movil",
     descripcion: "Fly in Sky es una aplicación móvil diseñada para entusiastas de la simulación de vuelo. Ofrece herramientas y recursos esenciales para que tus vuelos virtuales sean más realistas y divertidos.",
-    imagen: "https://play-lh.googleusercontent.com/4FBC005Io7926A5Q-yEu2g1ylaNQyPNF618ar2z3N9DafLzu_7radSdepT3GK_xLnw_XNGg3PTQnGlen5k3fpA=w2560-h1440-rw",
+    imagenes: [
+      "https://play-lh.googleusercontent.com/4FBC005Io7926A5Q-yEu2g1ylaNQyPNF618ar2z3N9DafLzu_7radSdepT3GK_xLnw_XNGg3PTQnGlen5k3fpA=w2560-h1440-rw",
+      "https://play-lh.googleusercontent.com/SKHdd2DtB5soAgVI7wIlCSAc-9JtTw5Ix-TcO13v_-gTq57hyqXCF8i-ut7CdH6RLlXwNNLXSlPxzTYIJ1T9=w2560-h1440-rw"
+    ],
     github: "https://github.com/DANIElPEZ/flyinsky",
     link: "https://play.google.com/store/apps/details?id=com.dnv.flyinsky",
     tecnologias: [
@@ -46,7 +49,10 @@ export const projects = [
     nombre: "Iconic Music",
     tipo: "movil",
     descripcion: "Iconic Music es una aplicación móvil diseñada para quienes buscan música única y original. Permite escuchar canciones exclusivas y guardar tus favoritas para acceder a ellas rápidamente.",
-    imagen: "https://play-lh.googleusercontent.com/j0Fja7HoYn4Y_QhJ41QnBIacJdFnsckYWFGBnYCC-0HoG9WOUEWBF2FhD3oiABis-GI=w2560-h1440-rw",
+    imagenes: [
+      "https://play-lh.googleusercontent.com/j0Fja7HoYn4Y_QhJ41QnBIacJdFnsckYWFGBnYCC-0HoG9WOUEWBF2FhD3oiABis-GI=w2560-h1440-rw",
+      "https://play-lh.googleusercontent.com/RQgWz7AhHLZGrQCagmZEzZOcgsA432FhVvoF_Qkv9E3rR_XUtMDKUIqj8ZooqcpeZ3bH=w2560-h1440-rw"
+    ],
     github: "https://github.com/DANIElPEZ/iconic-music",
     link: "https://play.google.com/store/apps/details?id=com.dnv.dev.iconicmusic",
     tecnologias: [
@@ -59,7 +65,10 @@ export const projects = [
     nombre: "Crispy Chikis",
     tipo: "movil",
     descripcion: "Crispy Chikis es una aplicación móvil de entrega de comida a domicilio, inspirada en las plataformas de restaurantes modernas. Los clientes pueden pedir en línea, seguir sus entregas.",
-    imagen: "https://play-lh.googleusercontent.com/JgqfmXzsc-Oextja0gqizHhr_JVXFVzjEyN9i8fV2OtvIgCsKeSFVsQWfXGtHSF9kz51=w2560-h1440-rw",
+    imagenes: [
+      "https://play-lh.googleusercontent.com/JgqfmXzsc-Oextja0gqizHhr_JVXFVzjEyN9i8fV2OtvIgCsKeSFVsQWfXGtHSF9kz51=w2560-h1440-rw",
+      "https://play-lh.googleusercontent.com/yl7zmx9oxah_sOQagjv3n_so7rBmttQxYKvwZursaPFgDFLFSv0gJkpfEE90Lqp71xVM=w2560-h1440-rw"
+    ],
     github: "https://github.com/DANIElPEZ/crispy-chikis-app",
     link: "https://play.google.com/store/apps/details?id=com.dnv.dev.crispychikis",
     tecnologias: [
