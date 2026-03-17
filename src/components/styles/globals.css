@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root{
+     /*Global Styles*/
+     --nav-bar-bg-color: #1b2b43;
+     --main-content-bg-color: #0c151d;
+     --main-color-small-info: #14a1f0;
+     --text-color: #fff;
+     /* nav bar colors*/
+     --nav-bar-bg:#1b2b43;
+     --side-bar-bg:#0f1928;
+     --link-hover-color: #105a86;
+}
