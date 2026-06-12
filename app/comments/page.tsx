@@ -77,7 +77,7 @@ export default function Comments() {
             </div>
           ))
         ) : (
-          <div className="flex w-full h-full items-center justify-center">
+          <div className="flex w-full h-full items-center justify-center" key={1}>
             <span className="h-13.75 w-13.75 rounded-full border-8 border-neutral-600 border-l-[#3f99f2] animate-spin"></span>
           </div>
         )}

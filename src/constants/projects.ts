@@ -51,7 +51,7 @@ export const projects = [
     descripcion: "Iconic Music es una aplicación móvil diseñada para quienes buscan música única y original. Permite escuchar canciones exclusivas y guardar tus favoritas para acceder a ellas rápidamente.",
     imagenes: [
       "https://play-lh.googleusercontent.com/f34kFSX0YkWS9q7-1rXhSNAuNxzL4VCQD5gOUn2En5z1olSnALxF9_MOyX24rPe9Agv7NjAm2gaejzoD8YW4A-A=w2560-h1440-rw",
-      "https://play-lh.googleusercontent.com/5dtl6D7kH9QaBROJSt5_dEs4AyatARAzcXtV7pga3j7AhedEjX5VJgq99dTiVk07c0LHqBZjU-_-JtuZZM7b=w2560-h1440-rw"
+      "https://play-lh.googleusercontent.com/ePwlTGsDfF_8CkJIRUTzZ_FJ9UzAgr8JkPsf83IpyBVCE3_198CKZTs55i3zFzNk_-KgGdAXt9OFF_E33-gANg=w2560-h1440-rw"
     ],
     github: "https://github.com/DANIElPEZ/iconic-music",
     link: "https://play.google.com/store/apps/details?id=com.dnv.dev.iconicmusic",
@@ -76,19 +76,36 @@ export const projects = [
       "https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white"
     ]
   },
+  {
+    id: 6,
+    nombre: "CTOS Hack city",
+    tipo: "movil",
+    descripcion: "ctOS es una aplicación de simulación interactiva inspirada en el sistema de hackeo del primer Watch Dogs. Permite sumergirse en una atmósfera cruda de espionaje digital, explorar un sistema misterioso y sentir que tienes el control total del dispositivo desde las sombras.",
+    imagenes: [
+      "https://play-lh.googleusercontent.com/dA3MMRZqNsD340fEI8bCo0ceaJTHNvp1ksN9dTHWE_g1retpmydi6ugYPuoBLjYosjLbArD3kQonngP7pljV=w2560-h1440-rw",
+      "https://play-lh.googleusercontent.com/jz2SqsfQhzo4kYyrrU3xRbprc3lQw7dUrf84O_QiflzxdKakoX8mMGTJwtVxom0CTNt_b95R3LanpV02nnfeIYc=w2560-h1440-rw"
+    ],
+    github: "https://github.com/DANIElPEZ/ctos-hack-city",
+    link: "https://play.google.com/store/apps/details?id=com.dnv.ctos",
+    tecnologias: [
+      "https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white",
+      "https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white"
+    ]
+  },
 ];
 
 export const stack = {
   web: [
-    "https://img.shields.io/badge/node.js-qwe?style=for-the-badge&logo=node.js&logoColor=%23fff&color=%235FA04E",
-    "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
-    "https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
+    "https://img.shields.io/badge/nextjs-dotee?style=for-the-badge&logo=nextdotjs&color=%23000",
     "https://img.shields.io/badge/espress-qwe?style=for-the-badge&logo=express&logoColor=%23fff&color=%23000000",
-    "https://img.shields.io/badge/nestjs-qwe?style=for-the-badge&logo=nestjs&logoColor=%23fff&color=%23E0234E",
+    "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
     "https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white",
     "https://img.shields.io/badge/mysql-qwe?style=for-the-badge&logo=mysql&logoColor=%23fff&color=%234479A1",
+    "https://img.shields.io/badge/docker-qwe?style=for-the-badge&logo=docker&logoColor=%23fff&color=%232496ED",
+    "https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
     "https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white",
-    "https://img.shields.io/badge/docker-qwe?style=for-the-badge&logo=docker&logoColor=%23fff&color=%232496ED"
+    "https://img.shields.io/badge/node.js-qwe?style=for-the-badge&logo=node.js&logoColor=%23fff&color=%235FA04E",
+    "https://img.shields.io/badge/nestjs-qwe?style=for-the-badge&logo=nestjs&logoColor=%23fff&color=%23E0234E",
   ],
   movil: [
     "https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white",
